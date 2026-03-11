@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Health and Fitness Club</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f3f7f7;
+text-align:center;
+}
+
+header{
+background:#0a8f5a;
+color:white;
+padding:20px;
+}
+
+nav{
+background:#222;
+padding:15px;
+}
+
+nav button{
+background:#0a8f5a;
+color:white;
+border:none;
+padding:12px 18px;
+margin:8px;
+font-size:16px;
+cursor:pointer;
+border-radius:6px;
+}
+
+nav button:hover{
+background:#066943;
+}
+
+.content{
+display:none;
+background:white;
+margin:25px;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+.active{
+display:block;
+}
+
+.gallery{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.gallery img{
+
+width:250px;
+
+height:170px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+box-shadow:0px 0px 5px gray;
+
+}
+
+footer{
+background:#222;
+color:white;
+padding:10px;
+margin-top:20px;
+}
+
+</style>
+
+
+<script>
+
+function showTab(tabId){
+
+var tabs=document.getElementsByClassName("content");
+
+for(var i=0;i<tabs.length;i++)
+{
+tabs[i].style.display="none";
+}
+
+document.getElementById(tabId).style.display="block";
+
+}
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<header>
+
+<h1>Health and Fitness Club</h1>
+
+<p>Your Complete Fitness Guide</p>
+
+</header>
+
+
+<nav>
+
+<button onclick="showTab('health')">Health Tips</button>
+
+<button onclick="showTab('exercise')">Exercise</button>
+
+<button onclick="showTab('nutrition')">Age Wise Nutrition</button>
+
+<button onclick="showTab('diet')">Diet Chart</button>
+
+<button onclick="showTab('sleep')">Sleep & Rest</button>
+
+</nav>
+
+
+
+<div id="health" class="content active">
+
+<h1>Health Tips</h1>
+
+<ul>
+<li>Drink water daily</li>
+<li>Walk daily</li>
+<li>Eat fruits</li>
+<li>Avoid junk food</li>
+</ul>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352">
+
+<img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8">
+
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+
+</div>
+
+</div>
+
+
+
+<div id="exercise" class="content">
+
+<h1>Exercise</h1>
+
+<ul>
+
+<li>Pushups</li>
+<li>Running</li>
+<li>Squats</li>
+<li>Plank</li>
+
+</ul>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b">
+
+<img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd">
+
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61">
+
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+
+</div>
+
+</div>
+
+
+
+<div id="nutrition" class="content">
+
+<h1>Age Wise Nutrition</h1>
+
+<h3>Children</h3>
+
+<p>Milk, fruits, eggs</p>
+
+<h3>Adults</h3>
+
+<p>Protein food and vegetables</p>
+
+<h3>Older adults</h3>
+
+<p>Calcium rich diet</p>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
+
+<img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71">
+
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+
+<img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543">
+
+</div>
+
+</div>
+
+
+
+<div id="diet" class="content">
+
+<h1>Diet Chart</h1>
+
+<ul>
+
+<li>Morning → Fruits</li>
+<li>Breakfast → Oats</li>
+<li>Lunch → Dal Rice</li>
+<li>Dinner → Light food</li>
+
+</ul>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+<img src="https://images.unsplash.com/photo-1467453678174-768ec283a940">
+
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+
+<img src="https://images.unsplash.com/photo-1505253716362-afaea6fcaf48">
+
+</div>
+
+</div>
+
+
+
+<div id="sleep" class="content">
+
+<h1>Sleep & Rest</h1>
+
+<ul>
+
+<li>Adults → 7-8 hours</li>
+<li>Children → 9-10 hours</li>
+<li>Avoid mobile at night</li>
+
+</ul>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1511295742362-92c96b0c2b4b">
+
+<img src="https://images.unsplash.com/photo-1455642305367-68834a9d07a7">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
+<img src="https://images.unsplash.com/photo-1520206183501-b80df61043c2">
+
+</div>
+
+</div>
+
+
+
+<footer>
+
+<p>© 2026 Health and Fitness Club</p>
+
+</footer>
+
+
+</body>
+
+</html>
